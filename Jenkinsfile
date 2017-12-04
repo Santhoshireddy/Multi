@@ -5,7 +5,7 @@ node {
     stage 'test'
     echo 'hello'
     stage('push') 
-    echo 'Santhosh reddy'
+    echo 'Santhosh reddy i am here'
 }
 
 
