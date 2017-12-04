@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'make publish'
-                sh 'bash ./santhu.sh'
+                
             }
         }
     }
