@@ -4,8 +4,8 @@ node {
     echo 'Hello World'
     stage 'test'
     echo 'hello'
-    stage('push') {
-    // Santhosh reddy 
+    stage('push') 
+    echo 'Santhosh reddy'
 }
 
 
