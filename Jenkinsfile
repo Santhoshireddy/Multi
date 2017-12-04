@@ -4,4 +4,5 @@ node {
     stage 'test'
     echo 'hello'
     sh 'pwd'
+    //trigger the build job
 }
