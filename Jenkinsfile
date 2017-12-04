@@ -6,7 +6,7 @@ node {
     echo 'hello'
     stage('push') 
     echo 'Santhosh reddy ireddy '
-    sh 'bash ./santhu.sh'
+    
 }
 
 
