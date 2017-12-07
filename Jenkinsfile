@@ -1,12 +1,33 @@
+#!/usr/bin/env groovy
+properties([
+    [$class: 'GithubProjectProperty',
+    displayName: '',
+    projectUrlStr: 'https://github.com/VeridicSolutions99/Veridic_Atlanta.git/'],
+    pipelineTriggers([githubPush()])])
 
-node {
-    stage 'buid'
-    echo 'Hello World'
-    stage 'test'
-    echo 'hello'
-    stage('push') 
-    echo 'Santhosh reddy ireddy '
-    
+pipeline {
+    agent any 
+
+    stages {
+        stage('Build') { 
+            steps { 
+                sh 'pwd' 
+            }
+        }
+        stage('Test'){
+            steps {
+                sh 'java -version'
+                
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'ls'
+                sh 'pwd'
+            }
+        }
+    }
 }
+
 
 
