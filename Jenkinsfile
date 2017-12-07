@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'pwd'
-    parameters { booleanParam(name: 'DEBUG_BUILD', defaultValue: true, description: '') }
+    
 
             }
         }
