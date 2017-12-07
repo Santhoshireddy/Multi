@@ -24,6 +24,10 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'pwd'
+                 parameters {
+        booleanParam(defaultValue: true, description: '', name: 'userFlag')
+    }
+
             }
         }
     }
